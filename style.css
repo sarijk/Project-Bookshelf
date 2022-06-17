@@ -10,6 +10,10 @@
     font-family: "Gotham-Medium";
     src: url(assets/font/Gotham-Medium.otf);
 }
+@font-face {
+    font-family: "Gotham-Ssm-Medium";
+    src: url(assets/font/Gotham-SSm-Medium.otf);
+}
 
 * {
     margin: 0;
@@ -94,6 +98,46 @@ main {
     height: 400px;
     background-color: #F7F5F2;
     border-radius: 0 0 15px 15px;
+}
+
+.box section {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    width: 560px;
+    height: fit-content;
+    background-color: #F7F7F7;
+    box-shadow: 0 0 2px 1px #AAAAAA;
+}
+
+.box h3 {
+    font-family: "Gotham-Ssm-Medium";
+    font-size: 16px;
+    color: #393E46;
+    letter-spacing: 0.05em;
+}
+
+.box p {
+    font-family: "Gotham-Book";
+    font-size: 14px;
+    color: #393E46;
+    letter-spacing: 0.1em;
+    margin-top: 5px;
+}
+
+.statusbox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 550px;
+}
+
+.statusbox p {
+    padding: 6px;
+    font-size: 12px;
+    width: 480px;
+    color: #aaa;
 }
 
 .data {
