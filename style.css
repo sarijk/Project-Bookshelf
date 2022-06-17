@@ -93,8 +93,8 @@ main {
 }
 
 .iconsearch {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 
 .box {
@@ -102,10 +102,14 @@ main {
     height: 400px;
     background-color: #F7F5F2;
     border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .box section {
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
     padding: 15px;
     border-radius: 15px;
     width: 560px;
@@ -143,9 +147,14 @@ main {
 
 .statusbox p {
     font-size: 14px;
-    width: 480px;
+    width: 450px;
     color: #aaa;
     font-family: "Poppins-Reguler";
+}
+
+.iconedit {
+    width: 16px;
+    height: 16px;
 }
 
 .icondelete {
