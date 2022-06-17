@@ -11,8 +11,12 @@
     src: url(assets/font/Gotham-Medium.otf);
 }
 @font-face {
-    font-family: "Gotham-Ssm-Medium";
-    src: url(assets/font/Gotham-SSm-Medium.otf);
+    font-family: "Poppins-Medium";
+    src: url(assets/font/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "Poppins-Reguler";
+    src: url(assets/font/Poppins-Regular.ttf);
 }
 
 * {
@@ -88,7 +92,7 @@ main {
     padding-left: 10px;
 }
 
-.bookshelf article img {
+.iconsearch {
     width: 24px;
     height: 24px;
 }
@@ -103,7 +107,7 @@ main {
 .box section {
     margin: 20px;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 15px;
     width: 560px;
     height: fit-content;
     background-color: #F7F7F7;
@@ -111,33 +115,42 @@ main {
 }
 
 .box h3 {
-    font-family: "Gotham-Ssm-Medium";
+    font-family: "Poppins-Medium";
     font-size: 16px;
     color: #393E46;
     letter-spacing: 0.05em;
 }
 
 .box p {
-    font-family: "Gotham-Book";
+    font-family: "Poppins-Reguler";
     font-size: 14px;
     color: #393E46;
     letter-spacing: 0.1em;
-    margin-top: 5px;
 }
 
 .statusbox {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 5px;
     justify-content: space-between;
     width: 550px;
 }
 
+.iconstatus {
+    width: 18px;
+    height: 18px;
+}
+
 .statusbox p {
-    padding: 6px;
-    font-size: 12px;
+    font-size: 14px;
     width: 480px;
     color: #aaa;
+    font-family: "Poppins-Reguler";
+}
+
+.icondelete {
+    width: 18px;
+    height: 18px;
 }
 
 .data {
@@ -149,7 +162,7 @@ main {
     padding: 10px;
     font-family: "Gotham-Medium";
     font-size: 22px;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.05em;
     color: #393E46;
     opacity: .8;
 }
