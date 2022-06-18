@@ -30,6 +30,7 @@ body {
     margin-right: 9%;
     margin-top: 45px;
     margin-bottom: 45px;
+    overflow-x: hidden;
 }
 
 header img {
@@ -88,7 +89,7 @@ main {
     height: 26px;
     border: none;
     font-family: "Gotham-Book";
-    font-size: 18px;
+    font-size: 20px;
     color: #393E46;
     opacity: .4;
     padding-left: 10px;
@@ -166,7 +167,10 @@ main {
 
 aside {
     width: 424px;
-    height: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 aside h2 {
@@ -190,10 +194,8 @@ label {
 .form section {
     width: 404px;
     height: 60px;
-    display: flex;
-    flex-direction: column;
     padding: 10px;
-    justify-content: space-between;
+    margin-top: 10px;
 }
 
 .form input {
@@ -203,8 +205,9 @@ label {
     padding: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-top: 5px;
     font-family: "Gotham-Book";
-    font-size: 16px;
+    font-size: 20px;
     color: #393E46;
     opacity: .8;
 }
@@ -215,8 +218,9 @@ label {
     padding: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-top: 5px;
     font-family: "Gotham-Book";
-    font-size: 16px;
+    font-size: 18px;
     border: 2px solid #aaa;
     color: #393E46;
     opacity: .8;
