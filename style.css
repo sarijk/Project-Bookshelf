@@ -33,7 +33,8 @@ body {
 }
 
 header img {
-    width: 18%;
+    width: 254px;
+    height: 58px;
 }
 
 main {
@@ -42,34 +43,35 @@ main {
     margin-top: 70px;
 }
 
-.bookshelf {
-    width: 650px;
-    height: 450px;
-}
-
-.bookshelf article {
+.databox {
+    width: fit-content;
     display: flex;
+    flex-direction: column;
 }
 
-.bookshelf article button {
+.bookshelf {
+    width: 840px;
+    height: 450px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookshelf button {
     font-family: "Gotham-Medium";
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.05em;
     color: #393E46;
     opacity: .8;
-    width: 101px;
+    width: 400px;
     height: 45px;
     background-color: #FFD369;
     border: none;
     border-radius: 15px 15px 0 0;
 }
 
-.bookshelf article button:hover {
-    box-shadow: 0 0 3px #AAAAAA;
-}
-
-.bookshelf article form {
-    width: 435px;
+.searchbox {
+    width: 800px;
     height: fit-content;
     border: 1px solid #F7F5F2;
     display: flex;
@@ -81,12 +83,12 @@ main {
     border-radius: 15px 15px 0 0;
 }
 
-.bookshelf article input {
-    width: 375px;
+.searchbox input {
+    width: 700px;
     height: 26px;
     border: none;
     font-family: "Gotham-Book";
-    font-size: 16px;
+    font-size: 18px;
     color: #393E46;
     opacity: .4;
     padding-left: 10px;
@@ -98,7 +100,7 @@ main {
 }
 
 .box {
-    width: 650px;
+    width: 400px;
     height: 400px;
     background-color: #F7F5F2;
     border-radius: 0 0 15px 15px;
@@ -229,11 +231,13 @@ label {
 
 .buttonsave {
     font-family: "Gotham-Bold";
-    font-size: 18px;
+    font-size: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     letter-spacing: 0.2em;
-    width: 125px;
-    height: 40px;
-    border-radius: 20px;
+    border-radius: 30px;
     border: none;
     color: #393E46;
     opacity: .8;
