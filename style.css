@@ -176,6 +176,15 @@ main {
     opacity: .8;
 }
 
+label {
+    font-family: "Gotham-Book";
+    font-size: 17px;
+    margin-left: 5px;
+    letter-spacing: 0.02em;
+    color: #393E46;
+    opacity: .8;
+}
+
 .data section {
     width: 404px;
     height: 60px;
@@ -183,15 +192,6 @@ main {
     flex-direction: column;
     padding: 10px;
     justify-content: space-between;
-}
-
-.data h5 {
-    font-family: "Gotham-Book";
-    font-size: 17px;
-    margin-left: 5px;
-    letter-spacing: 0.02em;
-    color: #393E46;
-    opacity: .8;
 }
 
 .data article section input {
@@ -227,9 +227,9 @@ main {
     margin-top: 45px;
 }
 
-.data article button {
+.buttonsave {
     font-family: "Gotham-Bold";
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 0.2em;
     width: 125px;
     height: 40px;
@@ -239,8 +239,9 @@ main {
     opacity: .8;
     background-color: #FFD369;
     cursor: pointer;
+    font-variant: small-caps;
 }
 
-.data article button:hover {
+.buttonsave:hover {
     background-color: #FFC54D;
 }
