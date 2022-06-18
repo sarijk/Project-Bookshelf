@@ -1,6 +1,10 @@
 const books = [];
 const RENDER_EVENT = 'render-book';
 
+document.addEventListener(RENDER_EVENT, function() {
+    console.log(books);
+});
+
 function generateID() {
     return +new Date();
 }
