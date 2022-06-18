@@ -185,7 +185,7 @@ label {
     opacity: .8;
 }
 
-aside section {
+.form section {
     width: 404px;
     height: 60px;
     display: flex;
@@ -194,7 +194,7 @@ aside section {
     justify-content: space-between;
 }
 
-aside section input {
+.form input {
     width: 380px;
     border-radius: 10px;
     border: 2px solid #aaa;
@@ -207,7 +207,7 @@ aside section input {
     opacity: .8;
 }
 
-aside section select {
+.form select {
     width: 403px;
     border-radius: 10px;
     padding: 10px;
