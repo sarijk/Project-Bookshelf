@@ -162,12 +162,12 @@ main {
     height: 18px;
 }
 
-.data {
+aside {
     width: 424px;
     height: 450px;
 }
 
-.data h2 {
+aside h2 {
     padding: 10px;
     font-family: "Gotham-Medium";
     font-size: 22px;
@@ -185,7 +185,7 @@ label {
     opacity: .8;
 }
 
-.data section {
+aside section {
     width: 404px;
     height: 60px;
     display: flex;
@@ -194,7 +194,7 @@ label {
     justify-content: space-between;
 }
 
-.data article section input {
+aside section input {
     width: 380px;
     border-radius: 10px;
     border: 2px solid #aaa;
@@ -207,7 +207,7 @@ label {
     opacity: .8;
 }
 
-.data article section select {
+aside section select {
     width: 403px;
     border-radius: 10px;
     padding: 10px;
