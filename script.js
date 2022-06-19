@@ -15,37 +15,82 @@ function generateID() {
     }
 }
 
-function makeData(bookObject) {
+function findBook(bookID) {
+    for (bookItem of books) {
+        if (bookItem.id === bookID) {
+            return bookItem;
+        }
+    }
+    return null;
+}
+
+function findBookIndex(bookID) {
+    for (index in books) {
+        if (books[index].id === bookID) {
+            return index;
+        }
+    }
+    return -1;
+}
+
+function inputBook(bookObject) {
     const {id, title, author, year, isCompleted} = bookObject;
 
     const textTitle = document.createElement("h3");
     textTitle.innerText = title;
 
-    const textTimestamp = document.createElement("h4");
-    textTimestamp.innerText = author
+    const textAuthor = document.createElement("h4");
+    textAuthor.innerText = author;
 
-    const textAuthor = document.createElement("p");
-    textAuthor.innerText = year;
+    const textYear = document.createElement("p");
+    textYear.innerText = year;
 
-    const dataCard = document.createElement("div");
-    dataCard.classList.add("card");
-    dataCard.append(textTitle, textTimestamp, textAuthor);
+    const textContainer = document.createElement("div");
+    textContainer.classList.add("card");
+    textContainer.append(textTitle, textAuthor, textYear);
 
     const container = document.createElement("div");
-    container.classList.add("container");
-    container.append(dataCard);
+    container.classList.add("item");
+    container.append(textContainer);
     container.setAttribute("id", `book-${id}`);
+
+    if (isCompleted) {
+        const readButton = document.createElement("button");
+        readButton.classList.add("read-button");
+        readButton.addEventListener("click",
+        function() {
+            readBookFromCompleted(id);
+        });
+
+        const deleteButton = document.createElement("button");
+        deleteButton.classList.add("delete-button");
+        deleteButton.addEventListener("click", function() {
+            removeBookFromCompleted(id);
+        });
+
+        container.append(readButton, deleteButton);
+    } else {
+        const checkButton = document.createElement("button");
+        checkButton.classList.add("check-button");
+        checkButton.addEventListener("click",
+        function() {
+            addBookToCompleted(id);
+        });
+
+        container.append(checkButton);
+    }
+    return container;
 }
 
 function addBook() {
-    const title = document.getElementById("title").value;
-    const author = document.getElementById("author").value;
-    const year = document.getElementById("year").value;
+    const titleBook = document.getElementById("title").value;
+    const authorBook = document.getElementById("author").value;
+    const yearBook = document.getElementById("year").value;
 
     const generateID = generateID()
-    const inputData = generateInputObject(generateID, title, author, year, false)
+    const bookObject = generateBookObject(generateID, titleBook, authorBook, yearBook, false)
 
-    books.push(inputData);
+    books.push(bookObject);
 
     document.dispatchEvent(new Event(RENDER_EVENT));
 }

@@ -255,3 +255,21 @@ form .button {
 .buttonsave:hover {
     background-color: #FFC54D;
 }
+
+.read-button {
+    width: 24px;
+    height: 24px;
+    background: url("assets/image/read.png");
+}
+
+.delete-button {
+    width: 24px;
+    height: 24px;
+    background: url("assets/image/delete.png");
+}
+
+.check-button {
+    width: 24px;
+    height: 24px;
+    background: url("assets/image/finish.png");
+}
