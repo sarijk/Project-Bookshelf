@@ -58,17 +58,19 @@ main {
     justify-content: space-between;
 }
 
-.bookshelf button {
+.bookshelf h4 {
     font-family: "Gotham-Medium";
     font-size: 16px;
     letter-spacing: 0.05em;
     color: #393E46;
     opacity: .8;
     width: 400px;
-    height: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #FFD369;
     border: none;
     border-radius: 15px 15px 0 0;
+    text-align: center;
 }
 
 .searchbox {
@@ -78,10 +80,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 9px;
+    padding: 15px;
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px;
 }
 
 .searchbox input {
