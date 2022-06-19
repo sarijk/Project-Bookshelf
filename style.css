@@ -273,3 +273,24 @@ form .button {
     height: 24px;
     background: url("assets/image/finish.png");
 }
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.item > .card h4 {
+    margin-bottom: unset;
+}
+
+.item > .card h3 {
+    margin-top: 5px;
+}
+
+.item > .card p {
+    margin-top: 5px;
+}
