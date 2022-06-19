@@ -228,14 +228,9 @@ label {
     opacity: .8;
 }
 
-form .button {
+form .buttonsave {
     width: 424px;
-    display: flex;
-    justify-content: space-around;
     margin-top: 45px;
-}
-
-.button .buttonsave {
     font-family: "Gotham-Bold";
     font-size: 22px;
     padding-left: 30px;

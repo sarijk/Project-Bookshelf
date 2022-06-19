@@ -11,7 +11,7 @@ function generateID() {
         title,
         author,
         year,
-        isCompleted,
+        isCompleted
     }
 }
 
@@ -87,8 +87,8 @@ function addBook() {
     const authorBook = document.getElementById("author").value;
     const yearBook = document.getElementById("year").value;
 
-    const generateID = generateID()
-    const bookObject = generateBookObject(generateID, titleBook, authorBook, yearBook, false)
+    const generateID = generateID();
+    const bookObject = generateBookObject(generateID, titleBook, authorBook, yearBook, false);
 
     books.push(bookObject);
 
@@ -103,16 +103,16 @@ function addBookToCompleted(bookID) {
     document.dispatchEvent(new Event(RENDER_EVENT));
 }
 
-function removeBookToCompleted(bookID) {
+function removeBookFromCompleted(bookID) {
     const bookTarget = findBookIndex(bookID);
-    if(bookTarget == -1) return;
+    if(bookTarget === -1) return;
 
     books.splice(bookTarget, 1);
     document.dispatchEvent(new Event(RENDER_EVENT));
 }
 
-function readBookToCompleted(bookID) {
-    const bookTarget = findBookIndex(bookID);
+function readBookFromCompleted(bookID) {
+    const bookTarget = findBook(bookID);
     if(bookTarget == null) return;
 
     bookTarget.isCompleted = false;
