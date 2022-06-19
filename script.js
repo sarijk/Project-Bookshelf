@@ -95,6 +95,30 @@ function addBook() {
     document.dispatchEvent(new Event(RENDER_EVENT));
 }
 
+function addBookToCompleted(bookID) {
+    const bookTarget = findBook(bookID);
+    if(bookTarget == null) return;
+
+    bookTarget.isCompleted = true;
+    document.dispatchEvent(new Event(RENDER_EVENT));
+}
+
+function removeBookToCompleted(bookID) {
+    const bookTarget = findBookIndex(bookID);
+    if(bookTarget == -1) return;
+
+    books.splice(bookTarget, 1);
+    document.dispatchEvent(new Event(RENDER_EVENT));
+}
+
+function readBookToCompleted(bookID) {
+    const bookTarget = findBookIndex(bookID);
+    if(bookTarget == null) return;
+
+    bookTarget.isCompleted = false;
+    document.dispatchEvent(new Event(RENDER_EVENT));
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const submitForm = document.getElementById("form");
 
@@ -105,6 +129,19 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener(RENDER_EVENT, function() {
-    console.log(books);
+    const readingBook = document.getElementById("reads");
+    const redBook = document.getElementById("completed");
+
+    readingBook.innerHTML = "";
+    redBook.innerHTML = "";
+
+    for(bookItem of books) {
+        const bookElement = inputBook(bookItem);
+        if(bookItem.isCompleted) {
+            redBook.append(bookElement);
+        } else {
+            readingBook.append(bookElement);
+        }
+    }
 });
 
