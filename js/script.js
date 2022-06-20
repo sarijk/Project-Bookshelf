@@ -91,6 +91,7 @@ function inputBook(bookObject) {
     deleteButton.classList.add('delete-button');
     deleteButton.addEventListener('click', function () {
       removeBookFromCompleted(id);
+      alert("Dihapus");
     });
     const readButton = document.createElement('button');
     readButton.classList.add('read-button');
@@ -108,6 +109,7 @@ function inputBook(bookObject) {
     deleteButton.classList.add('delete-button');
     deleteButton.addEventListener('click', function () {
       removeBookFromCompleted(id);
+      alert("Dihapus");
     });
 
     const checkButton = document.createElement('button');

@@ -20,6 +20,47 @@
     padding: 0;
 }
 
+.popup {
+    width: fit-content;
+    height: fit-content;
+    background-color: #FFFFFF;
+    border: 2px solid #AAAAAA;
+    border-radius: 20px;
+    z-index: 2;
+    text-align: center;
+    padding: 30px 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup img {
+    width: 50px;
+    height: 50px;
+}
+
+.popup p {
+    font-family: "Poppins-Medium";
+    font-size: 20px;
+    margin-top: 10px;
+    color: #121212;
+    opacity: .8;
+}
+
+.popup button {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 20px;
+    font-family: "Poppins-Medium";
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: #121212;
+    color: #F7F5F2;
+    margin-top: 30px;
+}
+
 body {
     margin: 36px 125px;
 }
