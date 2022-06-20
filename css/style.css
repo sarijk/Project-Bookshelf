@@ -25,23 +25,18 @@
 }
 
 body {
-    height: fit-content;
-    margin-left: 9%;
-    margin-right: 9%;
-    margin-top: 45px;
-    margin-bottom: 45px;
-    overflow-x: hidden;
+    margin: 36px 125px;
 }
 
 header img {
-    width: 254px;
-    height: 58px;
+    width: 204px;
 }
 
 main {
     display: flex;
-    justify-content: space-between;
-    margin-top: 70px;
+    justify-content: space-around;
+    margin-top: 45px;
+    flex-wrap: wrap;
 }
 
 .databox {
@@ -50,8 +45,35 @@ main {
     flex-direction: column;
 }
 
+.searchbox {
+    width: 670px;
+    height: fit-content;
+    border: 1px solid #F7F5F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 15px;
+}
+
+.searchbox input {
+    width: 600px;
+    height: 20px;
+    border: none;
+    padding-left: 5px 10px;
+    font-family: "Gotham-Book";
+    font-size: 16px;
+    color: #393E46;
+    opacity: .4;
+}
+
+.iconsearch {
+    width: 20px;
+    height: 20px;
+}
+
 .bookshelf {
-    width: 840px;
+    width: 700px;
     height: 450px;
     margin-top: 20px;
     display: flex;
@@ -60,172 +82,180 @@ main {
 
 .bookshelf h4 {
     font-family: "Gotham-Medium";
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.05em;
     color: #393E46;
     opacity: .8;
-    width: 400px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    width: 320px;
+    padding: 12px 0;
     background-color: #FFD369;
     border: none;
     border-radius: 15px 15px 0 0;
     text-align: center;
 }
 
-.searchbox {
-    width: 800px;
-    height: fit-content;
-    border: 1px solid #F7F5F2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 15px;
-}
-
-.searchbox input {
-    width: 700px;
-    height: 26px;
-    border: none;
-    font-family: "Gotham-Book";
-    font-size: 20px;
-    color: #393E46;
-    opacity: .4;
-    padding-left: 10px;
-}
-
-.iconsearch {
-    width: 20px;
-    height: 20px;
-}
-
-.icondelete {
-    width: 18px;
-    height: 18px;
+.container-list {
+    height: 400px;
+    border-left: 2px solid #F7F5F2;
+    border-bottom: 3px solid #F7F5F2;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 aside {
-    width: 424px;
-    height: 500px;
+    width: 340px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 aside h2 {
-    padding: 10px;
     font-family: "Gotham-Medium";
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 0.05em;
     color: #393E46;
     opacity: .8;
+    padding: 10px;
 }
 
 label {
     font-family: "Gotham-Book";
-    font-size: 17px;
-    margin-left: 5px;
+    font-size: 15px;
     letter-spacing: 0.02em;
     color: #393E46;
     opacity: .8;
+    margin-left: 5px;
 }
 
 .form section {
-    width: 404px;
-    height: 60px;
+    width: 325px;
+    height: 48px;
     padding: 10px;
     margin-top: 10px;
 }
 
 .form input {
-    width: 380px;
+    width: 310px;
     border-radius: 10px;
-    border: 2px solid #aaa;
-    padding: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    border: 2px solid #AAAAAA;
+    padding: 5px 10px;
     margin-top: 5px;
     font-family: "Gotham-Book";
-    font-size: 20px;
+    font-size: 18px;
     color: #393E46;
     opacity: .8;
 }
 
 .form select {
-    width: 403px;
+    width: 335px;
     border-radius: 10px;
-    padding: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    border: 2px solid #AAAAAA;
+    padding: 5px 10px;
     margin-top: 5px;
     font-family: "Gotham-Book";
     font-size: 18px;
-    border: 2px solid #aaa;
     color: #393E46;
     opacity: .8;
 }
 
 form .buttonsave {
-    width: 424px;
+    width: 345px;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
     margin-top: 45px;
+    background-color: #FFD369;
     font-family: "Gotham-Bold";
     font-size: 22px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-variant: small-caps;
     letter-spacing: 0.2em;
-    border-radius: 30px;
-    border: none;
     color: #393E46;
     opacity: .8;
-    background-color: #FFD369;
     cursor: pointer;
-    font-variant: small-caps;
 }
 
 .buttonsave:hover {
     background-color: #FFC54D;
 }
 
-.read-button {
-    width: 24px;
-    height: 24px;
-    background: url("assets/image/read.png");
-}
-
-.delete-button {
-    width: 24px;
-    height: 24px;
-    background: url("assets/image/delete.png");
-}
-
-.check-button {
-    width: 24px;
-    height: 24px;
-    background: url("assets/image/finish.png");
-}
-
 .item {
     border-radius: 16px;
-    margin-top: 16px;
-    padding: 12px 24px 12px 24px;
-    background: white;
+    padding: 16px;
+    margin: 16px;
+    background: #FFFFFF;
     display: flex;
     align-items: center;
+    box-shadow: 0 0 5px #AAAAAA;
 }
 
-.item > .card h4 {
+.item > .card h2 {
+    font-family: "Poppins-Medium";
+    font-size: 16px;
+    color: #121212;
     margin-bottom: unset;
 }
 
 .item > .card h3 {
+    font-family: "Poppins-Medium";
+    font-size: 14px;
+    color: #5A5A5A;
     margin-top: 5px;
 }
 
 .item > .card p {
+    font-family: "Poppins-Medium";
+    font-size: 12px;
+    color: #888888;
     margin-top: 5px;
+}
+
+.check-button {
+    width: 20px;
+    height: 20px;
+    background: url("../assets/image/check-outlined.png");
+    background-size: contain;
+    margin-top: 26px;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url("../assets/image/check-solid.png");
+    background-size: contain;
+}
+
+.delete-button {
+    width: 20px;
+    height: 20px;
+    background: url("../assets/image/delete.png");
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+}
+
+.delete-button:hover {
+    background: url("../assets/image/delete-hover.png");
+    background-size: contain;
+}
+
+.read-button {
+    width: 20px;
+    height: 20px;
+    background: url("../assets/image/read-outlined.png");
+    background-size: contain;
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.read-button:hover {
+    background: url("../assets/image/read-solid.png");
+    background-size: contain;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
 }
