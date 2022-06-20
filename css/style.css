@@ -1,22 +1,18 @@
 @font-face {
     font-family: "Gotham-Bold";
-    src: url(assets/font/Gotham-Bold.otf);
+    src: url(../assets/font/Gotham-Bold.otf);
 }
 @font-face {
     font-family: "Gotham-Book";
-    src: url(assets/font/Gotham-Book.otf);
+    src: url(../assets/font/Gotham-Book.otf);
 }
 @font-face {
     font-family: "Gotham-Medium";
-    src: url(assets/font/Gotham-Medium.otf);
+    src: url(../assets/font/Gotham-Medium.otf);
 }
 @font-face {
     font-family: "Poppins-Medium";
-    src: url(assets/font/Poppins-Medium.ttf);
-}
-@font-face {
-    font-family: "Poppins-Reguler";
-    src: url(assets/font/Poppins-Regular.ttf);
+    src: url(../assets/font/Poppins-Medium.ttf);
 }
 
 * {
@@ -60,7 +56,7 @@ main {
     width: 600px;
     height: 20px;
     border: none;
-    padding-left: 5px 10px;
+    padding: 5px 10px;
     font-family: "Gotham-Book";
     font-size: 16px;
     color: #393E46;
