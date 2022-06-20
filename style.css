@@ -102,66 +102,6 @@ main {
     height: 20px;
 }
 
-.box {
-    width: 400px;
-    height: 400px;
-    background-color: #F7F5F2;
-    border-radius: 0 0 15px 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-.box section {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    padding: 15px;
-    border-radius: 15px;
-    width: 560px;
-    height: fit-content;
-    background-color: #F7F7F7;
-    box-shadow: 0 0 2px 1px #AAAAAA;
-}
-
-.box h3 {
-    font-family: "Poppins-Medium";
-    font-size: 16px;
-    color: #393E46;
-    letter-spacing: 0.05em;
-}
-
-.box p {
-    font-family: "Poppins-Reguler";
-    font-size: 14px;
-    color: #393E46;
-    letter-spacing: 0.1em;
-}
-
-.statusbox {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-    justify-content: space-between;
-    width: 550px;
-}
-
-.iconstatus {
-    width: 18px;
-    height: 18px;
-}
-
-.statusbox p {
-    font-size: 14px;
-    width: 450px;
-    color: #aaa;
-    font-family: "Poppins-Reguler";
-}
-
-.iconedit {
-    width: 16px;
-    height: 16px;
-}
-
 .icondelete {
     width: 18px;
     height: 18px;
