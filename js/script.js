@@ -90,8 +90,12 @@ function inputBook(bookObject) {
     const deleteButton = document.createElement('button');
     deleteButton.classList.add('delete-button');
     deleteButton.addEventListener('click', function () {
-      removeBookFromCompleted(id);
-      alert("Dihapus");
+      customConfirm();
+      document.getElementById("approve-button").addEventListener("click", function() {
+        document.getElementsByClassName("popup-confirm")[0].classList.remove("active");
+        removeBookFromCompleted(id);
+        customDialog();
+      });
     });
     const readButton = document.createElement('button');
     readButton.classList.add('read-button');
@@ -108,8 +112,12 @@ function inputBook(bookObject) {
     const deleteButton = document.createElement('button');
     deleteButton.classList.add('delete-button');
     deleteButton.addEventListener('click', function () {
-      removeBookFromCompleted(id);
-      alert("Dihapus");
+      customConfirm();
+      document.getElementById("approve-button").addEventListener("click", function() {
+        document.getElementsByClassName("popup-confirm")[0].classList.remove("active");
+        removeBookFromCompleted(id);
+        customDialog();
+      });
     });
 
     const checkButton = document.createElement('button');
@@ -128,6 +136,20 @@ function inputBook(bookObject) {
   return container;
 }
 
+function customConfirm() {
+  document.getElementsByClassName("popup-confirm")[0].classList.add("active");
+}
+document.getElementById("cancel-button").addEventListener("click", function() {
+  document.getElementsByClassName("popup-confirm")[0].classList.remove("active");
+});
+
+function customDialog() {
+  document.getElementsByClassName("popup")[0].classList.add("active");
+}
+
+document.getElementById("ok-button").addEventListener("click", function() {
+  document.getElementsByClassName("popup")[0].classList.remove("active");
+});
 
 function addBook() {
   const titleBook = document.getElementById('title').value;
@@ -182,10 +204,6 @@ function readBookFromCompleted(bookID) {
   }
 });
 
-document.addEventListener(SAVED_EVENT, () => {
-    console.log('Data berhasil di simpan.');
-});
-
 document.addEventListener(RENDER_EVENT, function () {
   const readingBook = document.getElementById('reads');
   const redBook = document.getElementById('completed');
@@ -203,3 +221,25 @@ document.addEventListener(RENDER_EVENT, function () {
   }
 });
 
+const searchButton = document.getElementById("iconsearch");
+searchButton.addEventListener("click", function() {
+  searchBook();
+});
+
+function searchBook() {
+  const searchTitle = document.getElementById("searching").value.toLowerCase();
+  const listTitle = document.querySelectorAll(".card");
+  let i = 0;
+  for(title of listTitle) {
+          if(searchTitle != "") {
+              if(listTitle[i].childNodes[0].innerText.toLowerCase() != searchTitle) {
+                  listTitle[i].parentElement.style.display = "none";
+              } else {
+                  listTitle[i].parentElement.style.display = "";
+              } 
+          } else {
+              listTitle[i].parentElement.style.display = "";
+          }
+          i++;
+  }
+}

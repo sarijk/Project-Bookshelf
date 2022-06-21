@@ -23,16 +23,91 @@
 .popup {
     width: fit-content;
     height: fit-content;
-    background-color: #FFFFFF;
-    border: 2px solid #AAAAAA;
+    background-color: #F8F8F8;
+    box-shadow: 0 0 10px #AAAAAA;
     border-radius: 20px;
-    z-index: 2;
+    z-index: 999;
     text-align: center;
     padding: 30px 60px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup-confirm {
+    width: 300px;
+    height: fit-content;
+    background-color: #F8F8F8;
+    box-shadow: 0 0 10px #AAAAAA;
+    border-radius: 20px;
+    z-index: 3;
+    text-align: center;
+    padding: 30px 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup-confirm p {
+    font-family: "Poppins-Medium";
+    font-size: 20px;
+    margin-top: 10px;
+    color: #121212;
+    opacity: .8;
+}
+
+.popup-confirm .button-confirm {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup-confirm #cancel-button {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 20px;
+    font-family: "Poppins-Medium";
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2px solid #E43835;
+    background-color: #F5F5F5;
+    color: #E43835;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.popup-confirm #cancel-button:hover {
+    background-color: #E43835;
+    color: #F7F5F2;
+}
+
+.popup-confirm #approve-button {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 20px;
+    font-family: "Poppins-Medium";
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid #121212;
+    background-color: #121212;
+    color: #F7F5F2;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.popup-confirm #approve-button:hover {
+    box-shadow: 0 0 5px #121212;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .popup img {
@@ -48,17 +123,24 @@
     opacity: .8;
 }
 
-.popup button {
+.popup #ok-button {
     width: fit-content;
     height: fit-content;
     padding: 5px 20px;
     font-family: "Poppins-Medium";
     font-size: 16px;
     border-radius: 20px;
-    border: none;
+    border: 1px solid #121212;
     background-color: #121212;
     color: #F7F5F2;
     margin-top: 30px;
+    cursor: pointer;
+}
+
+.popup #ok-button:hover {
+    color: #111111;
+    background: #F5F5F5;
+    border: 1px solid #111111;
 }
 
 body {
@@ -104,7 +186,7 @@ main {
     opacity: .4;
 }
 
-.iconsearch {
+#iconsearch {
     width: 20px;
     height: 20px;
 }
@@ -165,14 +247,14 @@ label {
     margin-left: 5px;
 }
 
-.form section {
+#form section {
     width: 325px;
     height: 48px;
     padding: 10px;
     margin-top: 10px;
 }
 
-.form input {
+#form input {
     width: 310px;
     border-radius: 10px;
     border: 2px solid #AAAAAA;
@@ -184,24 +266,12 @@ label {
     opacity: .8;
 }
 
-.form select {
-    width: 335px;
-    border-radius: 10px;
-    border: 2px solid #AAAAAA;
-    padding: 5px 10px;
-    margin-top: 5px;
-    font-family: "Gotham-Book";
-    font-size: 18px;
-    color: #393E46;
-    opacity: .8;
-}
-
-form .buttonsave {
+#form .buttonsave {
     width: 345px;
     border: none;
     border-radius: 30px;
     padding: 10px 30px;
-    margin-top: 45px;
+    margin-top: 100px;
     background-color: #FFD369;
     font-family: "Gotham-Bold";
     font-size: 22px;

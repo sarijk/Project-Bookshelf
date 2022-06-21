@@ -11,18 +11,27 @@
     <header>
         <img src="assets/image/logo.png" alt="logo">
     </header>
+    
+    <div class="popup-confirm">
+        <img src="assets/image/alert.png" alt="">
+        <p>Apakah Anda yakin akan menghapus buku ini?</p>
+        <div class="button-confirm">
+            <button id="cancel-button">BATAL</button>
+            <button id="approve-button">YAKIN</button>
+        </div>
+    </div>
 
     <div class="popup">
         <img src="assets/image/success.png" alt="">
         <p>Berhasil dihapus!</p>
-        <button>OK</button>
+        <button id="ok-button">OK</button>
     </div>
 
     <main>
         <div class="databox">
             <form action="" class="searchbox">
-                <input type="text" placeholder="Masukkan judul buku">
-                <img src="assets/image/search.png" alt="" class="iconsearch">
+                <input type="text" placeholder="Masukkan judul buku" id="searching">
+                <img src="assets/image/search.png" alt="" id="iconsearch">
             </form>
             <article class="bookshelf">
                 <section>
@@ -42,7 +51,7 @@
 
         <aside>
             <h2>DATA BUKU</h2>
-            <form class="form" action="#" id="form">
+            <form action="#" id="form">
                 <section>
                     <label for="title">Judul</label>
                     <input type="text" id="title" name="title" required>
@@ -55,13 +64,7 @@
                     <label for="year">Tahun</label>
                     <input type="date" id="year" name="year" required>
                 </section>
-                <section>
-                    <label for="state">Status</label>
-                    <select name="state" id="state">
-                        <option value="belum">Belum selesai</option>
-                        <option value="sudah">Sudah selesai</option>
-                      </select>
-                </section>
+                
                 <input type="submit" value="submit" name="submit" class="buttonsave">
             </form>
         </aside>
