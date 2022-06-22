@@ -229,6 +229,7 @@ searchButton.addEventListener("click", function() {
 function searchBook() {
   const searchTitle = document.getElementById("searching").value.toLowerCase();
   const listTitle = document.querySelectorAll(".card");
+
   let i = 0;
   for(title of listTitle) {
           if(searchTitle != "") {
