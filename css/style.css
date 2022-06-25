@@ -144,7 +144,7 @@
 }
 
 body {
-    margin: 4% 8%;
+    margin: 1% 8%;
 }
 
 header img {
@@ -154,7 +154,7 @@ header img {
 main {
     display: flex;
     justify-content: space-around;
-    margin-top: 45px;
+    margin-top: 35px;
     flex-wrap: wrap;
 }
 
@@ -162,7 +162,6 @@ main {
     width: fit-content;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     flex-grow: 2;
 }
 
@@ -179,7 +178,6 @@ main {
 }
 
 .searchbox input {
-    width: 600px;
     height: 20px;
     border: none;
     padding: 5px 10px;
@@ -210,7 +208,6 @@ main {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
-    flex-wrap: wrap;
     margin-right: 60px;
 }
 
