@@ -191,6 +191,13 @@ main {
     height: 20px;
 }
 
+.buttonreset {
+    width: fit-content;
+    border: none;
+    background-color: #FFFFFF;
+    color: blue;
+}
+
 .bookshelf {
     width: 700px;
     height: 450px;
