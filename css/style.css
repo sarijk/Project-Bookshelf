@@ -195,7 +195,11 @@ main {
     width: fit-content;
     border: none;
     background-color: #FFFFFF;
-    color: blue;
+    color: #3B44F6;
+    font-family: "Gotham-Book";
+    font-size: 14px;
+    margin-top: 8px;
+    margin-left: 25px;
 }
 
 .bookshelf {
