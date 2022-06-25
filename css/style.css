@@ -144,7 +144,7 @@
 }
 
 body {
-    margin: 36px 125px;
+    margin: 4% 8%;
 }
 
 header img {
@@ -162,10 +162,11 @@ main {
     width: fit-content;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 2;
 }
 
 .searchbox {
-    width: 670px;
     height: fit-content;
     border: 1px solid #F7F5F2;
     display: flex;
@@ -173,6 +174,8 @@ main {
     align-items: center;
     padding: 8px 16px;
     border-radius: 15px;
+    flex-grow: 1;
+    margin-right: 60px;
 }
 
 .searchbox input {
@@ -203,11 +206,12 @@ main {
 }
 
 .bookshelf {
-    width: 700px;
-    height: 450px;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin-right: 60px;
 }
 
 .bookshelf h4 {
@@ -238,6 +242,7 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 aside h2 {
